@@ -54,7 +54,6 @@ self.addEventListener('fetch', function (event) {
         // Note: we need to make a copy of the response to save it in
         // the cache and use the original as the request response.
         cache.put(event.request, fetchedResponse.clone());
-        console.log(fetchedResponse);
 
         // Return the network response
         return fetchedResponse;
